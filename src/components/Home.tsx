@@ -92,7 +92,6 @@ export default function Home() {
         {/* ORANGE BACKGROUND STARTING FROM HALF OF MAIN CARD */}
         <div className="absolute inset-x-[-116] top-[250px] bottom-0 bg-[rgba(254,87,25,1)] z-0"></div>
       </section>
-
       {/* PARTNERS */}
       <section className="bg-[rgba(254,87,25,1)] py-10 relative z-10">
          <div className="text-center mb-8 mt-12">

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+
 
 const Footer = () => {
   return (
@@ -46,7 +49,7 @@ const Footer = () => {
               Legal
             </h3>
             <ul className="space-y-3 text-sm text-gray-600">
-              <li><Link href="/TermsAndPrivacy">Terms & privacy</Link></li>
+              <li><Link href="/termsandprivacy">Terms & privacy</Link></li>
               <li><Link href="#">Patriot Act</Link></li>
               <li><Link href="#">Consent</Link></li>
             </ul>

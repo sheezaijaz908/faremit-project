@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonals";
 import FAQPage from "../components/Faqs";
 import Home from "../components/Home";
 
+
 export default function RootLayout({
   children,
 }: {
@@ -22,7 +23,6 @@ export default function RootLayout({
         <HowItWorks />
         <Testimonials />
         <FAQPage />
-
         <Footer />
       </body>
     </html>

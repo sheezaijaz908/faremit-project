@@ -10,12 +10,15 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Image
-            src="/logo.svg"
-            alt="Faremit Logo"
-            width={160}
-            height={56}
-          />
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              alt="Faremit Logo"
+              width={160}
+              height={56}
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Center Links */}
@@ -34,7 +37,7 @@ const Navbar = () => {
         {/* Right Buttons */}
         <div className="flex items-center gap-4">
           <Link
-            href="/login"
+            href="/signin"
             className="px-5 py-2 text-sm font-large text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100"
           >
             Login
