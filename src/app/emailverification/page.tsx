@@ -21,7 +21,7 @@ export default function VerifyEmailPage() {
         <div className="w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-12 relative">
 
           {/* Top Right Logo */}
-          <div className="absolute top-6 right-6">
+          <div className="absolute top-0 right-0">
             <Image
               src="/signup-logo.svg"
               alt="Faremint Logo"

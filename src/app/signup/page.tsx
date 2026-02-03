@@ -1,60 +1,60 @@
-"use client"; // required because we use useRouter
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 export default function SignUpPage() {
   const router = useRouter();
 
   const handleContinue = () => {
-    router.push("/emailverification"); // navigate to personaldetail page
+    router.push("/emailverification");
   };
 
   return (
-    <main className="min-h-screen w-full bg-white flex items-center justify-center">
-      {/* WRAPPER */}
-      <div className="w-full max-w-7xl flex">
+    <main className="w-full min-h-screen bg-white flex items-center justify-center">
+      <div className="w-full max-w-6xl flex flex-col lg:flex-row min-h-screen">
 
         {/* LEFT IMAGE */}
-        <div className="hidden lg:flex w-[48%] items-center justify-center">
-          <div className="relative w-full h-[80vh]">
-            <Image
-              src="/signin-image.svg"
-              alt="Sign in"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+        <div className="hidden lg:flex w-full lg:w-[48%] h-screen relative">
+          <Image
+            src="/signin-image.svg"
+            alt="Sign up illustration"
+            fill
+            className="object-cover rounded-l-2xl"
+            priority
+          />
         </div>
 
-        {/* GAP */}
-        <div className="hidden lg:block w-[4%]" />
-
         {/* RIGHT FORM */}
-        <div className="w-full lg:w-[48%] flex items-center justify-center">
-          <div className="w-full max-w-md">
-            {/* TITLE */}
-            <h1 className="text-2xl font-semibold text-[#0A1B44] mb-1">
+        <div className="w-full lg:w-[52%] flex items-center justify-center h-screen px-6 sm:px-12 relative">
+
+          {/* Top Right Logo */}
+          <div className="absolute top-0 right-0">
+            <Image
+              src="/signup-logo.svg"
+              alt="Faremint Logo"
+              width={170}
+              height={170}
+            />
+          </div>
+
+          {/* FORM CARD */}
+          <div className="max-w-md w-full mx-auto bg-white p-8">
+            <h1 className="text-2xl font-semibold text-[#0A1B44] mb-2">
               Create Your Faremit Account
             </h1>
 
-            <p className="text-sm text-gray-500 mb-8">
+            <p className="text-sm text-gray-500 mb-6">
               Already have an account?{" "}
-              <Link
-                href="/signup"
-                className="text-[#635BFF] font-medium hover:underline"
-              >
+              <Link href="/signin" className="text-[#635BFF] font-medium hover:underline">
                 Sign in
               </Link>
             </p>
 
-            {/* FORM */}
             <form className="space-y-6">
               <div>
-                <label className="block text-sm mb-2 text-gray-600">
+                <label className="block text-sm text-gray-600 mb-2">
                   Email address
                 </label>
                 <input
@@ -65,7 +65,7 @@ export default function SignUpPage() {
               </div>
 
               <div>
-                <label className="block text-sm mb-2 text-gray-600">
+                <label className="block text-sm text-gray-600 mb-2">
                   Full name
                 </label>
                 <input
@@ -76,48 +76,36 @@ export default function SignUpPage() {
               </div>
 
               <div>
-                <label className="block text-sm mb-2 text-gray-600">
+                <label className="block text-sm text-gray-600 mb-2">
                   Password
                 </label>
-                <div className="relative">
-                  <input
-                    type="password"
-                    placeholder="Enter password"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#635BFF]"
-                  />
-                 
-                </div>
+                <input
+                  type="password"
+                  placeholder="Enter password"
+                  className="w-full px-4 py-3 border border-[#C7C3FF] rounded-md focus:outline-none focus:ring-2 focus:ring-[#635BFF]"
+                />
               </div>
 
               {/* CONTINUE BUTTON */}
               <button
-                type="button" // <-- important
+                type="button"
                 onClick={handleContinue}
-                className="w-full bg-[#635BFF] hover:bg-[#544CFF] text-white py-3 rounded-md font-medium transition"
+                className="w-full bg-[#635BFF] hover:bg-[#544CFF] text-white py-3 rounded-xl font-medium transition"
               >
                 Continue
               </button>
 
               <p className="text-sm text-gray-500">
                 By signing up, you agree to Faremint’s{" "}
-                <Link
-                  href="/privacy-policy"
-                  className="text-[#635BFF] underline hover:text-[#544CFF]"
-                >
+                <Link href="/privacy-policy" className="text-[#635BFF] underline hover:text-[#544CFF]">
                   Privacy Policy
                 </Link>
                 ,{" "}
-                <Link
-                  href="/patriot-act"
-                  className="text-[#635BFF] underline hover:text-[#544CFF]"
-                >
+                <Link href="/patriot-act" className="text-[#635BFF] underline hover:text-[#544CFF]">
                   Patriot Act Disclosure
                 </Link>
-                {" "}and{" "}
-                <Link
-                  href="/ach-authorization"
-                  className="text-[#635BFF] underline hover:text-[#544CFF]"
-                >
+                , and{" "}
+                <Link href="/ach-authorization" className="text-[#635BFF] underline hover:text-[#544CFF]">
                   ACH Payment Authorization
                 </Link>
                 .

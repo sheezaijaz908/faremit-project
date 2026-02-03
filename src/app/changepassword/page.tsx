@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ChangePasswordPage() {
   return (
@@ -73,9 +74,11 @@ export default function ChangePasswordPage() {
         </div>
 
         {/* Save Button */}
-        <button className="w-full bg-[#5B54E3] hover:bg-[#4E47D6] text-white py-3 rounded-md font-medium transition mb-4">
-          Save
-        </button>
+        <Link href="/savepassword" className="w-full">
+      <button className="w-full bg-[#5B54E3] hover:bg-[#4E47D6] text-white py-3 rounded-md font-medium transition mb-4">
+        Save
+      </button>
+    </Link>
 
         {/* Info Text */}
         <p className="text-sm text-gray-600">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Accordion from "../components/common/Accordion";
 import Button from "../components/common/Button";
 
@@ -49,21 +50,23 @@ export default function FAQPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-[1232px] h-[320px] bg-orange-500 rounded-4xl p-25 flex justify-center items-center mt-[150px]">
-  <div className="text-center">
-    <h3 className="text-white text-xl md:text-2xl font-semibold mb-6">
-      Experience swift, secure, and cost-effective<br />
-      international transactions.
-    </h3>
+      <section className="w-full max-w-5xl bg-orange-500 rounded-3xl px-6 py-16 md:py-20 flex justify-center items-center">
+        <div className="text-center">
+          <h3 className="text-white text-xl md:text-2xl font-semibold mb-6">
+            Experience swift, secure, and cost-effective<br />
+            international transactions.
+          </h3>
 
-    {/* Custom Button */}
-    <div className="inline-block">
-      <button className="bg-white text-orange-500 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors">
-        Sign Up Now
-      </button>
-    </div>
-  </div>
-</section>
+          {/* Custom Button */}
+          <div className="inline-block">
+            <Link href="/signup">
+            <button className="bg-white text-orange-500 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors">
+              Sign Up Now
+            </button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
 
     </main>

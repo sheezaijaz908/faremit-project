@@ -31,7 +31,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-sm w-[400px] h-[400px] overflow-hidden flex items-center justify-center"
+              className="bg-white rounded-3xl shadow-sm w-full max-w-[400px] aspect-square overflow-hidden flex items-center justify-center"
             >
               {/* Image exactly same size */}
               <div className="relative w-full h-full">
