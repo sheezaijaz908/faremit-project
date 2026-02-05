@@ -155,7 +155,7 @@ export default function Home() {
         </div>
 
         {/* ORANGE BG */}
-        <div className="absolute inset-x-[-116] top-[250px] bottom-0 bg-[rgba(254,87,25,1)] z-0"></div>
+        <div className="absolute inset-x-[-116.5] top-[250px] bottom-0 bg-[rgba(254,87,25,1)] z-0"></div>
       </section>
 
       {/* PARTNERS */}

@@ -19,10 +19,10 @@ export default function Testimonials() {
         </p>
 
         {/* Cards */}
-        <div className="mt-20 text-left space-y-4">
+        <div className="mt-20 text-left">
 
           {/* ===== ROW 1 ===== */}
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col md:flex-row">
 
             {/* Card 1 */}
             <div className="rounded-2xl p-6 md:p-10 bg-[rgba(255,238,232,1)] flex-1 md:flex-[1.1] min-h-[240px]">
@@ -62,7 +62,7 @@ export default function Testimonials() {
           </div>
 
           {/* ===== ROW 2 ===== */}
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col md:flex-row">
 
             {/* Card 3 */}
             <div className="rounded-2xl p-6 md:p-10 bg-[rgba(247,246,248,1)] flex-1 min-h-[240px]">

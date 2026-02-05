@@ -90,7 +90,7 @@ export default function SignInPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className={`w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2
-                    ${emailError ? "border-red-500 focus:ring-red-300" : "border-[#C7C3FF] focus:ring-[#635BFF]"}`
+                    {emailError ? "border-red-500 focus:ring-red-300" : "border-[#C7C3FF] focus:ring-[#635BFF]"}`
                   }
                 />
                 {emailError && (
@@ -118,12 +118,13 @@ export default function SignInPage() {
               </div>
 
               {/* SIGN IN BUTTON */}
+              <Link href="\user_dashboard\home">
               <button
-                type="submit"
                 className="w-full bg-[#635BFF] hover:bg-[#544CFF] text-white py-3 rounded-xl font-medium transition"
               >
                 Sign In
               </button>
+              </Link>
             </form>
 
             <div className="mt-4">
