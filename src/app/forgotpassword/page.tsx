@@ -3,25 +3,25 @@ import Link from "next/link";
 
 export default function VerifyEmailPage() {
   return (
-    <main className="w-full bg-white flex items-center justify-center">
-      <div className="w-full max-w-6xl flex min-h-[110vh]">
+    <main className="w-full bg-white">
+      <div className="w-full max-w-6xl flex min-h-[100vh] gap-30">
 
         {/* LEFT IMAGE SECTION */}
-        <div className="hidden lg:flex w-[48%] relative">
+        <div className="hidden lg:flex w-[46%] relative">
           <Image
             src="/signin-image.svg"
             alt="Sign in illustration"
             fill
-            className="object-cover rounded-l-2xl"
+            className=""
             priority
           />
         </div>
 
         {/* RIGHT FORM SECTION */}
-        <div className="w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-12 relative">
+        <div className="w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-12">
 
           {/* Top Right Logo */}
-          <div className="absolute top-6 right-6">
+          <div className="absolute top-0 right-0">
             <Image
               src="/signup-logo.svg"
               alt="Faremint Logo"

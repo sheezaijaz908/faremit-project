@@ -12,22 +12,22 @@ export default function SignUpPage() {
   };
 
   return (
-    <main className="w-full min-h-screen bg-white flex items-center justify-center">
-      <div className="w-full max-w-6xl flex flex-col lg:flex-row min-h-screen">
+    <main className="w-full min-h-screen bg-white">
+      <div className="w-full max-w-6xl flex flex-col lg:flex-row min-h-screen gap-30">
 
         {/* LEFT IMAGE */}
-        <div className="hidden lg:flex w-full lg:w-[48%] h-screen relative">
+        <div className="hidden lg:flex w-full lg:w-[50%] h-screen relative">
           <Image
             src="/signin-image.svg"
             alt="Sign up illustration"
             fill
-            className="object-cover rounded-l-2xl"
+            className=""
             priority
           />
         </div>
 
         {/* RIGHT FORM */}
-        <div className="w-full lg:w-[52%] flex items-center justify-center h-screen px-6 sm:px-12 relative">
+        <div className="w-full lg:w-[45%] flex items-center justify-center h-screen px-12 sm:px-10">
 
           {/* Top Right Logo */}
           <div className="absolute top-0 right-0">
@@ -40,7 +40,7 @@ export default function SignUpPage() {
           </div>
 
           {/* FORM CARD */}
-          <div className="max-w-md w-full mx-auto bg-white p-8">
+          <div className="max-w-md w-full mx-auto bg-white p-10">
             <h1 className="text-2xl font-semibold text-[#0A1B44] mb-2">
               Create Your Faremit Account
             </h1>

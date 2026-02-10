@@ -74,7 +74,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT CARD */}
-          <div className="md:w-2/5 bg-[#F9FAFB] rounded-2xl p-6 md:p-8 space-y-5 my-6 md:my-0 flex-shrink-0">
+          <div className="md:w-2/5 bg-[#F9FAFB] rounded-2xl p-0 md:p-8 space-y-5 my-6 flex-shrink-0">
             {/* YOU SEND */}
             <div>
               <label className="text-sm text-gray-500 block mb-1">You send</label>
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
 
-            <button className="w-full bg-[#55433C] text-white py-3.5 rounded-xl font-medium hover:opacity-90 transition-opacity mt-2">
+            <button className="w-full bg-[#55433C] text-white py-2 rounded-xl font-medium hover:opacity-90 transition-opacity mt-[-4]">
               Send Money Now
             </button>
           </div>

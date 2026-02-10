@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-10 text-sm text-gray-700">
           <Link href="#" className="hover:text-orange-600">Company</Link>
-          <Link href="#" className="hover:text-orange-600">FAQ</Link>
+          <Link href="/Faqs" className="hover:text-orange-600">FAQ</Link>
           <Link href="#" className="hover:text-orange-600">Get App</Link>
         </div>
 

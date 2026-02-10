@@ -35,12 +35,29 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-[#0F172A] mb-4">
               Company
             </h3>
-            <ul className="space-y-3 text-sm text-gray-600">
-              <li><Link href="#">About us</Link></li>
-              <li><Link href="#">Careers</Link></li>
-              <li><Link href="#">FAQ</Link></li>
-              <li><Link href="#">Contact us</Link></li>
-            </ul>
+            <ul className="space-y-3 text-sm text-[rgba(47,72,88,1)]">
+                <li>
+                  <Link href="#" className="hover:text-orange-600 transition-colors">
+                    About us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-orange-600 transition-colors">
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-orange-600 transition-colors">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-orange-600 transition-colors">
+                    Contact us
+                  </Link>
+                </li>
+              </ul>
+
           </div>
 
           {/* Legal */}
@@ -48,11 +65,24 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-[#0F172A] mb-4">
               Legal
             </h3>
-            <ul className="space-y-3 text-sm text-gray-600">
-              <li><Link href="/termsandprivacy">Terms & privacy</Link></li>
-              <li><Link href="#">Patriot Act</Link></li>
-              <li><Link href="#">Consent</Link></li>
-            </ul>
+           <ul className="space-y-3 text-sm text-[rgba(47,72,88,1)]">
+            <li>
+              <Link href="/termsandprivacy" className="hover:text-orange-600 transition-colors">
+                Terms & Privacy
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-orange-600 transition-colors">
+                Patriot Act
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-orange-600 transition-colors">
+                Consent
+              </Link>
+            </li>
+          </ul>
+
           </div>
 
           {/* Get in touch */}
@@ -60,7 +90,7 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-[#0F172A] mb-4">
               Get in touch
             </h3>
-            <ul className="space-y-3 text-sm text-gray-600">
+            <ul className="space-y-3 text-sm text-[rgba(47,72,88,1)]">
               <li>128 City Road, London, United Kingdom</li>
               <li>+1 (234) 567-890</li>
               <li>info@faremit.com</li>

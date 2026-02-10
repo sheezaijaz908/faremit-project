@@ -24,22 +24,22 @@ export default function PersonalDetails() {
   const [selectedCountry, setSelectedCountry] = React.useState(countries[0]);
 
   return (
-    <main className="w-full bg-white flex items-center justify-center">
-      <div className="w-full max-w-6xl flex min-h-screen">
+    <main className="w-full bg-white">
+      <div className="w-full max-w-6xl flex min-h-screen gap-30">
 
         {/* LEFT IMAGE */}
-        <div className="hidden lg:flex w-[48%] h-screen relative">
+        <div className="hidden lg:flex w-[58%] h-screen relative">
           <Image
             src="/signin-image.svg"
             alt="Sign in illustration"
             fill
-            className="object-cover rounded-l-2xl"
+            className=""
             priority
           />
         </div>
 
         {/* RIGHT FORM */}
-        <div className="w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-14 relative h-screen">
+        <div className="w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-14 h-screen">
 
           {/* Top Right Logo */}
           <div className="absolute top-0 right-0">
@@ -164,7 +164,7 @@ export default function PersonalDetails() {
             </div>
 
             {/* Finish Button */}
-            <Link href="userdashboard">
+            <Link href="/user_dashboard/home">
               <button className="w-full bg-[#635BFF] hover:bg-[#544CFF] text-white py-3 rounded-xl font-medium transition">
                 Finish
               </button>

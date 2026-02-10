@@ -37,22 +37,22 @@ export default function SignInPage() {
   };
 
   return (
-    <main className="w-full min-h-screen bg-white flex items-center justify-center">
-      <div className="w-full max-w-6xl flex flex-col lg:flex-row min-h-screen">
+    <main className="w-full min-h-screen bg-white">
+      <div className="w-full max-w-6xl flex flex-col lg:flex-row min-h-screen gap-30">
 
         {/* LEFT IMAGE */}
-        <div className="hidden lg:flex w-full lg:w-[48%] h-screen relative">
+        <div className="hidden lg:flex w-full lg:w-[58%] h-screen relative">
           <Image
             src="/signin-image.svg"
             alt="Sign in illustration"
             fill
-            className="object-cover rounded-l-2xl"
+            className=""
             priority
           />
         </div>
 
         {/* RIGHT FORM */}
-        <div className="w-full lg:w-[52%] flex items-center justify-center h-screen px-6 sm:px-12 relative">
+        <div className="w-full lg:w-[52%] flex items-center justify-center h-screen px-6 sm:px-12">
 
           {/* Top Right Logo */}
           <div className="absolute top-0 right-0">
