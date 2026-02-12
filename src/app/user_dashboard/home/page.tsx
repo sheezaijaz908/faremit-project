@@ -289,27 +289,27 @@ const HomeTopbar = () => {
       {/* Left: Exchange Rates */}
         <div className="flex flex-wrap px-10 gap-6 text-sm text-gray-600">
           <span className="flex items-center gap-1">
-            <img src="/vector.svg" alt="rate icon" width={10} height={10} />
+            <Image src="/Vector.svg" alt="rate icon" width={10} height={10} />
             1 GBP = 1,468.29 NGN
           </span>
 
           <span className="flex items-center gap-1">
-            <img src="/vector.svg" alt="rate icon" width={10} height={10} />
+            <Image src="/Vector.svg" alt="rate icon" width={10} height={10} />
             1 USD = 1,146.72 NGN
           </span>
 
           <span className="flex items-center gap-1">
-            <img src="/vector.svg" alt="rate icon" width={10} height={10} />
+            <Image src="/Vector.svg" alt="rate icon" width={10} height={10} />
             1 EUR = 1,236.29 NGN
           </span>
 
           <span className="flex items-center gap-1">
-            <img src="/vector.svg" alt="rate icon" width={10} height={10} />
+            <Image src="/Vector.svg" alt="rate icon" width={10} height={10} />
             1 CAD = 850.29 NGN
           </span>
 
           <span className="flex items-center gap-1">
-            <img src="/vector.svg" alt="rate icon" width={10} height={10} />
+            <Image src="/Vector.svg" alt="rate icon" width={10} height={10} />
             1 AUD = 750.23 NGN
           </span>
 
